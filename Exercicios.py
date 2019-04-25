@@ -82,7 +82,7 @@ print("O decimal total é: ",div)
 print("E o total inteiro é: ",divInteiro)
 """
 #Quets12
-
+"""
 largura = float(input("Informe a largura do triangulo: "))
 altura = float(input("Informe a altura do triangulo: "))
 print("Sua altura esta em metros? ")
@@ -96,7 +96,7 @@ if(resposta == 'n'):
 else:
     area = (largura * altura) / 2
     print("A area total do triangulo possui", area, "metros quadrados")
-
+"""
 #Quest 13
 """
 dias = int(input("Informe a quantidade de dias: "))
