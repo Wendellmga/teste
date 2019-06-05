@@ -224,7 +224,7 @@ x = int(input("Digite um valor (inteiro) para ser calculado o fatorual: "))
 fatorial(x)
 """
 #Quest15
-"""
+
 def intervalo(x,num):
     if num in x:
         print()
@@ -234,17 +234,25 @@ def intervalo(x,num):
         print(30 * '-')
         print("O número desejado não está no intervalo determinado!")
 
+def input_int(msg):
+    while True:
+        try:
+            return int(input(msg))
+        except ValueError:
+            print("Número inválido.")
+
 try:
-    min = int(input("Informe o primeiro número desse intervalo: "))
-    max = int(input("Informe o ultimo número desse intervalo: "))
-    num = int(input("Informe o número que deseja saber se está no intervalo: "))
+
+    min = input_int("Informe o primeiro número desse intervalo: ")
+    max = input_int("Informe o ultimo número desse intervalo: ")
+    num = input_int("Informe o número que deseja saber se está no intervalo: ")
 
     l = list(range(min, max+1))
     intervalo(l,num)
 except:
     print(30*'-')
     print("Digite um número interio!!")
-"""
+
 #Quest16
 """
 def func16(x):
